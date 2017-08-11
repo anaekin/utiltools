@@ -263,3 +263,11 @@ p.item{
 button:focus, textarea:focus, input:focus{
 	outline:none !important;
 }
+@media only screen and (max-width: 768px){
+	.rename-div{
+		display:none;
+	}
+	.rename-div{
+		width:200px;
+	}
+}
