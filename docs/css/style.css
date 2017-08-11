@@ -32,6 +32,7 @@ html{
 }
 .navbar-inverse{
 	background-color: #3f51b5;
+	box-shadow: 0 3px 10px rgba(0,0,0,.23), 0 3px 10px rgba(0,0,0,.16);
 }
 .cal-btn:hover{
 	color: white;
