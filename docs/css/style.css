@@ -266,8 +266,7 @@ button:focus, textarea:focus, input:focus{
 @media only screen and (max-width: 768px){
 	.rename-div{
 		display:none;
-	}
-	.rename-div{
 		width:200px;
 	}
+	
 }
