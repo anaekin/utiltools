@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Utilities and Tools </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="palette.css" type="text/css">
+	<link rel="stylesheet" href="checkbox.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"> </head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<div class="jumbotron text-center header dark-primary-color" id="home">
+		<h1>UtilToOls</h1>
+		<p>
+			<h3 class="light-primary-text">Here, you can use various tools like Calculator, To-Do lists, Notepad etc.</h3> </p>
+	</div>
+	<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="246" style="margin-bottom: 0">
+		<div class="container-fluid">
+			<div class="navbar-header "> <a class="navbar-brand" href="index.html">UtilToOls</a> </div>
+			<ul class="nav navbar-nav">
+				<li class="active "><a href="#home">Home</a></li>
+				<li><a class="" href="#calculator">Calculator</a></li>
+				<li><a href="#todo" >To-Do Lists</a></li>
+				<li><a href="#notepad">Notepad</a></li>
+				<li><a href="#">About Us</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">Sign Up</a></li>
+				<li><a href="#">Login</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div id="calculator" class="main-container">
+		<div class="container">
+			<h3 class="container-h3 text-center">Calculator</h3>
+			<div class="col col-md-offset-3 col-md-6 " id="calculator-container">
+				<div class="form-group">
+					<input type="text" id="eq" placeholder="0" dir="rtl" class="form-control"> </div>
+				<div class="btn-group btn-group-justified">
+					<div class="btn-group">
+						<button class="btn btn-basic btn-lg cal-btn cal-num-btn" onclick="disp(this)" value="7"> 7 </button>
+					</div>
+					<div class="btn-group">
+						<button class="btn btn-basic btn-lg cal-btn cal-num-btn" onclick="disp(this)" value="8"> 8 </button>
+					</div>
+					<div class="btn-group">
+						<button class="btn btn-basic btn-lg cal-btn cal-num-btn" onclick="disp(this)" value="9"> 9 </button>
+					</div>
+					<div class="btn-group">
+						<button class="btn btn-basic btn-lg cal-btn cal-op-btn" onclick="disp(this)" value="+"> + </button>
+					</div>
+				</div>
+				<div class="btn-group btn-group-justified">
+					<div class="btn-group">
+						<button class="btn btn-basic btn-lg cal-btn cal-num-btn" onclick="disp(this)" value="4"> 4 </button>
+					</div>
+					<div class="btn-group">
+						<button class="btn btn-basic btn-lg cal-btn cal-num-btn" onclick="disp(this)" value="5"> 5 </button>
+					</div>
+					<div class="btn-group">
+						<button class="btn btn-basic btn-lg cal-btn cal-num-btn" onclick="disp(this)" value="6"> 6 </button>
+					</div>
+					<div class="btn-group">
+						<button class="btn btn-basic btn-lg cal-btn cal-op-btn" onclick="disp(this)" value="-"> - </button>
+					</div>
+				</div>
+				<div class="btn-group btn-group-justified">
+					<div class="btn-group">
+						<button class="btn btn-basic btn-lg cal-btn cal-num-btn" onclick="disp(this)" value="1"> 1 </button>
+					</div>
+					<div class="btn-group">
+						<button class="btn btn-basic btn-lg cal-btn cal-num-btn" onclick="disp(this)" value="2"> 2 </button>
+					</div>
+					<div class="btn-group">
+						<button class="btn btn-basic btn-lg cal-btn cal-num-btn" onclick="disp(this)" value="3"> 3 </button>
+					</div>
+					<div class="btn-group">
+						<button class="btn btn-basic btn-lg cal-btn cal-op-btn" onclick="disp(this)" value="*"> * </button>
+					</div>
+				</div>
+				<div class="btn-group btn-group-justified">
+					<div class="btn-group">
+						<button class="btn btn-basic btn-lg cal-btn cal-op-btn" onclick="disp(this)" value=" "> C </button>
+					</div>
+					<div class="btn-group">
+						<button class="btn btn-basic btn-lg cal-btn cal-num-btn" onclick="disp(this)" value="0"> 0 </button>
+					</div>
+					<div class="btn-group">
+						<button class="btn btn-basic btn-lg cal-btn cal-op-btn" onclick="disp(this)" value="="> = </button>
+					</div>
+					<div class="btn-group">
+						<button class="btn btn-basic btn-lg cal-btn cal-op-btn" onclick="disp(this)" value="/"> / </button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="todo" class="main-container">
+		<div class="container">
+			<h3 class="container-h3 text-center dark-primary-text-color">To-Do List</h3>
+			<div class="col col-md-offset-3 col-md-6" id="todo-container">
+				<form>
+					<div class="">
+						<div class="col col-md-12 text-left header div-header" id="todo-header">Item List</div>
+						<div id="todo-rename-div" class="rename-div">
+							<input type="text" value="" placeholder="Enter title" dir="ltr" class=" rename-input" id="todo-rename-input"> <span class="input-group-btn" id="rename"><button type="button" id="todo-rename-btn" class="accent-pink-color text-primary-color text-center rename-btn"><i class="fa fa-floppy-o" aria-hidden="true"></i></button>
+							</span> </div>
+						<div>
+							<ul class="todo-list" id="todo-list">
+								<li class="">
+									<p class="item">
+										<input type="checkbox" value="" name="check" class="check-box">
+										<label class="check-label"> Database Training </label>
+									</p>
+								</li>
+								<li class="">
+									<p class="item">
+										<input type="checkbox" value="" name="check" class="check-box">
+										<label class="check-label"> Java Training </label>
+									</p>
+								</li>
+								<li class="">
+									<p class="item">
+										<input type="checkbox" value="" name="check" class="check-box">
+										<label class="check-label"> UI Training </label>
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<button type="button" id="renameBtn" class="btn accent-pink-color text-primary-color text-center"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+					<button type="button" id="deleteBtn" class="btn accent-pink-color text-primary-color text-center"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+					<button type="button" id="addBtn" class="btn accent-pink-color text-primary-color text-center">+</button>
+					<div class="input-group" id="itemDiv" class="">
+						<input type="text" value="" placeholder="Enter" dir="ltr" class="form-control" id="addInput"> </span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="notepad" class="main-container">
+		<div class="container">
+			<h3 class="container-h3 text-center" >Notepad</h3>
+			<div class="col col-xs-12" id="notepad-container">
+				<div> 
+					<div class="col col-md-12 text-left header div-header" id="notepad-header">Notes</div>
+						<div id="notepad-rename-div" class="rename-div" style="display: block;">
+							<input type="text" value="" placeholder="Enter title" dir="ltr" class=" rename-input" id="notepad-rename-input" > <span class="input-group-btn" id="rename"><button type="button" id="notepad-rename-btn" class="accent-pink-color text-primary-color text-center rename-btn"><i class="fa fa-floppy-o" aria-hidden="true"></i></button>
+							</span> </div>
+						<div >
+							<textarea type="text" id="notepad-text-input"  value=" " rows="15" >
+							</textarea>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
