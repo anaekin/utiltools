@@ -49,7 +49,7 @@ function disp(element) {
 				lastOp = '/';
 				if(divCount == 0){
 					dividend = parseInt(num1);
-					res = dividend;
+					res = ((res != '') ? res : dividend);
 					divCount+= 1;
 				}else{
 					res = res / parseInt(num1);
