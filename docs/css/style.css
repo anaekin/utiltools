@@ -52,6 +52,7 @@ button.navbar-toggle{
 .change #bar-one{
 	-webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
     transform: rotate(-45deg) translate(-2px, 7px) ;
+	transition: all 0.4s ease;
 }
 .change #bar-two{
 	opacity:0;
@@ -59,6 +60,7 @@ button.navbar-toggle{
 .change #bar-three{
 	-webkit-transform: rotate(45deg) translate(-8px, 8px) ;
     transform: rotate(45deg) translate(-2px, -7px) ;
+	transition: all 0.4s ease;
 }
 .cal-btn:hover{
 	color: white;
