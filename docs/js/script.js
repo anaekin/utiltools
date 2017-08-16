@@ -2,7 +2,7 @@ var textbox = document.getElementById("eq");
 var num1 = '';
 var res = 0;
 var mul = 1;
-var lastOp ;
+var lastOp;
 var divCount = 0;
 var subCount = 0;
 function disp(element) {
@@ -17,7 +17,7 @@ function disp(element) {
 					num1 = '0';
 			lastOp = '+';
 		
-			res += parseInt(num1);
+			res += (num1 !== '') ? parseInt(num1) : 0;
 			count++;
 			num1 = '';
 			break;
@@ -29,7 +29,7 @@ function disp(element) {
 					res =((res != '') ? res : parseInt(num1));
 					subCount+= 1;
 				}else{
-					res = res - parseInt(num1);
+					res = res - ((num1 !== '') ? parseInt(num1) : 0);
 				}
 			count++;
 			num1 = '';
@@ -38,7 +38,7 @@ function disp(element) {
 				if(lastOp == '=')
 					num1 = '1';
 				lastOp = '*';
-			res = mul * parseInt(num1);
+			res = mul * ((num1 !== '') ? parseInt(num1) : 1);
 				mul = res;
 			count++;
 			num1 = '';
@@ -48,11 +48,10 @@ function disp(element) {
 					num1 = '1';
 				lastOp = '/';
 				if(divCount == 0){
-					dividend = parseInt(num1);
-					res = ((res != '') ? res : dividend);
+					res = ((res != '') ? res : parseInt(num1));
 					divCount+= 1;
 				}else{
-					res = res / parseInt(num1);
+					res = res / ((num1 !== '') ? parseInt(num1) : 1);
 				}
 			count++;
 			num1 = '';
@@ -63,7 +62,7 @@ function disp(element) {
 			//console.log(num1);
 			break;
 		}
-		console.log(num1 + ' '+lastOp + ' ' + count + ' ' + subCount);
+		console.log(res +' '+num1 + ' '+lastOp + ' ' + count + ' ' + subCount +' ');
 	}
 	else if (val === '=') {
 		
