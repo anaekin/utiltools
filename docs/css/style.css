@@ -343,7 +343,7 @@ input[type="checkbox"] {
 
 ul {
     list-style-type: none;
-    padding-top: 100px !important;
+    padding-top: 120px !important;
     
 }
 .check-label {
@@ -380,5 +380,8 @@ input:focus {
     }
     input.rename-input {
         width: 200px;
+    }
+    ul.todo-list{
+	padding-top: 30px !important;
     }
 }
