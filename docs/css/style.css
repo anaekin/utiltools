@@ -344,9 +344,11 @@ input[type="checkbox"] {
 ul {
     list-style-type: none;
     padding-top: 120px !important;
-    overflow:scroll;
+    
 }
-
+ul#todo-list{
+	overflow-x:scroll;
+}
 .check-label {
     font-size: 22px;
     padding: 8px;
