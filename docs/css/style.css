@@ -344,6 +344,7 @@ input[type="checkbox"] {
 ul {
     list-style-type: none;
     padding-top: 120px !important;
+    overflow:scroll;
 }
 
 .check-label {
