@@ -1,4 +1,4 @@
-# utiltools.github.io
+# anaekin.github.io/utiltools
 
 This is simple web application which contains calculator, todo-list and notepad.
 The website does not store any data. It is simply an open source template. 
